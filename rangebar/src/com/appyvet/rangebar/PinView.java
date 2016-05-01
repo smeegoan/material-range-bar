@@ -137,7 +137,7 @@ class PinView extends View {
                 3.5f, mRes.getDisplayMetrics());
         // If one of the attributes are set, but the others aren't, set the
         // attributes to default
-        if (pinRadiusDP == -1) {
+        if (pinRadiusDP <= 0) {
             mPinRadiusPx = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
                     DEFAULT_THUMB_RADIUS_DP,
                     mRes.getDisplayMetrics());
